@@ -406,39 +406,39 @@ class Solution {
 ```java
 import java.util.*;
 class Solution {
-    public int solution(int[] array){  
-    List<int[]> sortedArrayList = sortAndCount(array);  
-  
-    int max = 0;  
-    boolean check = false;  
-    int answer = 0;  
-  
-    for(int[] keyValue : sortedArrayList){  
-        System.out.println("key: "+ keyValue[0] + " value: " + keyValue[1]);  
-        if(keyValue[1] > max){  
-            max = keyValue[1];  
-            check = false;  
-            answer = keyValue[0];  
-        } else if (keyValue[1] == max){  
-            check = true;  
-        }  
-    }  
-    return check ? -1 : answer;  
-}  
-public List<int[]> sortAndCount(int[] array){  
-    List<int[]> temp = new ArrayList<>();  
-    int count = 0;  
-    int[] sortedArray = Arrays.stream(array).sorted().toArray();  
-    for(int i = 0; i < sortedArray.length - 1; i++){  
-        count++;  
-        if(sortedArray[i] != sortedArray[i+1]){  
-            temp.add(new int[]{sortedArray[i],count});  
-            count = 0;  
-        }  
-    }  
-    temp.add(new int[]{sortedArray[sortedArray.length-1],count+1});  
-    return temp;  
-}
+    public int solution(int[] array){
+        List<int[]> sortedArrayList = sortAndCount(array);
+
+        int max = 0;
+        boolean check = false;
+        int answer = 0;
+
+        for(int[] keyValue : sortedArrayList){
+            System.out.println("key: "+ keyValue[0] + " value: " + keyValue[1]);
+            if(keyValue[1] > max){
+                max = keyValue[1];
+                check = false;
+                answer = keyValue[0];
+            } else if (keyValue[1] == max){
+                check = true;
+            }
+        }
+        return check ? -1 : answer;
+    }
+    public List<int[]> sortAndCount(int[] array){
+        List<int[]> temp = new ArrayList<>();
+        int count = 0;
+        Arrays.sort(array);
+        for(int i = 0; i < array.length - 1; i++){
+            count++;
+            if(array[i] != array[i+1]){
+                temp.add(new int[]{array[i],count});
+                count = 0;
+            }
+        }
+        temp.add(new int[]{array[array.length-1],count+1});
+        return temp;
+    }
 }
 ```
 
