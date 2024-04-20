@@ -34,6 +34,7 @@
 
 
 ---
+
 ## Solution.java
 
 ```java
@@ -49,6 +50,7 @@ class Solution {
 [Read Original](https://school.programmers.co.kr/learn/courses/30/lessons/120849)
 
 ---
+
 # 코딩테스트 연습 - 문자열 정렬하기 (1) | 프로그래머스 스쿨
 
 ###### 문제 설명
@@ -61,7 +63,9 @@ class Solution {
 
 * 1 ≤ `my_string`의 길이 ≤ 100
 * `my_string`에는 숫자가 한 개 이상 포함되어 있습니다.
-* `my_string`은 영어 소문자 또는 0부터 9까지의 숫자로 이루어져 있습니다. - - -
+* `my_string`은 영어 소문자 또는 0부터 9까지의 숫자로 이루어져 있습니다.
+
+---
 
 ##### 입출력 예
 
@@ -89,6 +93,7 @@ class Solution {
 
 
 ---
+
 ## Solution.java
 
 ```java
@@ -100,13 +105,15 @@ class Solution {
             .sorted()
             .toArray();
     }
-}```
+}
+```
 
 ---
 
 [Read Original](https://school.programmers.co.kr/learn/courses/30/lessons/120850)
 
 ---
+
 # 코딩테스트 연습 - 소인수분해 | 프로그래머스 스쿨
 
 
@@ -148,6 +155,7 @@ class Solution {
 
 
 ---
+
 ## Solution.java
 
 ```java
@@ -167,9 +175,11 @@ class Solution {
 ```
 
 ---
+
 [Read Original](https://school.programmers.co.kr/learn/courses/30/lessons/120852)
 
 ---
+
 # 코딩테스트 연습 - 숨어있는 숫자의 덧셈 (1) | 프로그래머스 스쿨
 
 
@@ -213,6 +223,7 @@ class Solution {
 
 
 ---
+
 ## Solution.java
 
 ```java
@@ -227,5 +238,6 @@ class Solution {
 ```
 
 ---
+
 [Read Original](https://school.programmers.co.kr/learn/courses/30/lessons/120851)
 
